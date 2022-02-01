@@ -1,12 +1,14 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
-import { darken } from 'polished';
+
 
 import { Icon } from './Icon';
 import { color } from './shared/styles';
 
 const linkStyles = css`
+  @import compass/utilities
+
   display: inline-block;
   transition: transform 150ms ease-out, color 150ms ease-out;
   text-decoration: none;
@@ -17,11 +19,11 @@ const linkStyles = css`
   &:focus {
     cursor: pointer;
     transform: translateY(-1px);
-    color: ${darken(0.07, color.secondary)};
+    color: #1EA7FD;
   }
   &:active {
     transform: translateY(0);
-    color: ${darken(0.1, color.secondary)};
+    color: #1EA7FD';
   }
 
   svg {

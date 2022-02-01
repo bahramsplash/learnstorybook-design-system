@@ -6,7 +6,6 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
-    "polished": "^4.1.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.3",
@@ -18,8 +17,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook -s public",
+    "build-storybook-docs": "build-storybook  --docs",
+    "chromatic": "npx chromatic --project-token=c9d9f07edc88"
   },
   "eslintConfig": {
     "extends": [
@@ -60,6 +61,7 @@
     "@storybook/preset-create-react-app": "^3.2.0",
     "@storybook/react": "^6.4.17",
     "@storybook/testing-library": "^0.0.8",
+    "chromatic": "^6.4.3",
     "prettier": "^2.5.1",
     "webpack-cli": "^4.9.2"
   }
